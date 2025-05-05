@@ -221,7 +221,8 @@
     }
   }
   .cs_hero_title {
-    max-width: 900px;
+    max-width: 750px;
+    // max-width: 900px;
     margin-bottom: 82px;
     @media (max-width: 1380px) {
       margin-bottom: 50px;
@@ -278,7 +279,7 @@
       padding-left: 0;
     }
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100vw;
@@ -574,7 +575,7 @@
     .cs_hero_bg {
       height: 100%;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 100%;
         width: 100%;

@@ -1,9 +1,22 @@
-.cs_work_time {
+/* .cs_work_time_main {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
+}
+.cs_work_time {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px 70px;
-  min-height: 100px;
+  max-height: 44px;
   font-size: 14px;
+  padding: 10px;
 }
+
+.cs_work_time ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cs_work_time ul li {
+  list-style: none;
+} */

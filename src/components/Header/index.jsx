@@ -28,7 +28,9 @@ export default function Header({ logoSrc, variant }) {
   }, []);
   return (
     <>
-
+      {/* <div className="cs_work_time_main">
+        <WorkTime />
+      </div> */}
       <header
         className={`cs_site_header cs_style1 cs_sticky_header ${
           mobileToggle ? "cs_mobile_toggle_active" : ""
@@ -47,27 +49,8 @@ export default function Header({ logoSrc, variant }) {
                       mobileToggle ? "cs_nav_list cs_active" : "cs_nav_list"
                     }`}
                   >
-                    <li className="menu-item-has-children">
+                    <li>
                       <Link to="/">Home</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link to="/">Home Version-1</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v2">Home Version-2</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v3">Home Version-3</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v4">Home Version-4</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v5">Home Version-5</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
                     </li>
                     <li>
                       <Link to="/about">About</Link>

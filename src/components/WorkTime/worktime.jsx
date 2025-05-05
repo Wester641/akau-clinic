@@ -4,13 +4,16 @@ import "./main.css";
 
 export default function WorkTime() {
   return (
-    <div className="cs_work_time">
-      <div className="cs_work_time_left">
-        <h4 className="cs_work_time_title">Working Hours</h4>
-      </div>
-      <div className="cs_work_time_right">
-        <p>Monday - Friday</p>
-        <p>8:00 AM - 5:00 PM</p>
+    <div className="container">
+      <div className="cs_work_time">
+        <div className="cs_work_time_left">
+          <div className="cs_work_time_title">
+            Режим работы: пн-пт: с 8:00 до 18:00 сб: с 9:00 до 14:00
+          </div>
+        </div>
+        <ul className="cs_work_time_right">
+          <li>+996 999 000-003</li>
+        </ul>
       </div>
     </div>
   );

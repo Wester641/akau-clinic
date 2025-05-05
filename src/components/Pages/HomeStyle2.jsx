@@ -11,7 +11,6 @@ import FaqSectionStyle2 from "../Section/FaqSection/FaqSectionStyle2";
 import AppointmentSectionStyle2 from "../Section/AppointmentSection/AppointmentSectionStyle2";
 import BrandsSectionStyle2 from "../Section/BrandsSection/BrandsSectionStyle2";
 import { pageTitle } from "../../helpers/PageTitle";
-import WorkTime from "../WorkTime/worktime";
 const departmentData = [
   {
     title: "Emergency Department",
@@ -190,7 +189,7 @@ export default function HomeStyle2() {
   return (
     <>
       <HeroStyle2
-        title="Ак Аю Клиник, медицинская организация"
+        title="Многопрофильный медицинский центр в Москве"
         subTitle="Our team of experienced doctors and healthcare professionals are
         committed to providing quality care and personalized attention to
         our patients."
