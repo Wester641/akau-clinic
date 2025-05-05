@@ -48,28 +48,28 @@ const testimonialData = [
   {
     text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
     ratingNumber: "5",
-    avatarImgUrl: "/images/home_1/avatar_2.png",
+    avatarImgUrl: "/images/home_2/avatar_2.png",
     avatarName: "PAULO HUBERT",
     avatarDesignation: "New York, USA",
   },
   {
     text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
     ratingNumber: "4.5",
-    avatarImgUrl: "/images/home_1/avatar_2.png",
+    avatarImgUrl: "/images/home_2/avatar_2.png",
     avatarName: "PAULO HUBERT",
     avatarDesignation: "New York, USA",
   },
   {
     text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
     ratingNumber: "5",
-    avatarImgUrl: "/images/home_1/avatar_2.png",
+    avatarImgUrl: "/images/home_2/avatar_2.png",
     avatarName: "PAULO HUBERT",
     avatarDesignation: "New York, USA",
   },
   {
     text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
     ratingNumber: "4.5",
-    avatarImgUrl: "/images/home_1/avatar_2.png",
+    avatarImgUrl: "/images/home_2/avatar_2.png",
     avatarName: "PAULO HUBERT",
     avatarDesignation: "New York, USA",
   },
@@ -114,17 +114,17 @@ const workingProcessData = [
 const blogData = [
   {
     title: "The Benefits of Mindfulness Meditation for Stress and Anxiety",
-    thumbUrl: "images/home_1/post_1.jpeg",
+    thumbUrl: "images/home_2/post_1.jpeg",
     date: "May 1, 2023",
   },
   {
     title: "Healthy Eating on a Budget: Tips and Strategies",
-    thumbUrl: "images/home_1/post_2.jpeg",
+    thumbUrl: "images/home_2/post_2.jpeg",
     date: "May 4, 2023",
   },
   {
     title: "The Importance of Regular Cancer Screenings and Early Detection",
-    thumbUrl: "images/home_1/post_3.jpeg",
+    thumbUrl: "images/home_2/post_3.jpeg",
     date: "May 1, 2023",
   },
 ];
@@ -186,7 +186,7 @@ const brandData = [
   },
 ];
 export default function HomeStyle2() {
-  pageTitle("Home V2");
+  pageTitle("Главная Страница");
   return (
     <>
       <HeroStyle2
@@ -201,10 +201,10 @@ export default function HomeStyle2() {
         btnText="Pro Health"
         btnUrl="/"
         funfactList={[
-          { number: "20+", title: "Years of experience" },
-          { number: "95%", title: "Patient satisfaction rating" },
-          { number: "5000+", title: "Patients served annually" },
-          { number: "10+", title: "Healthcare providers on staff" },
+          { number: "7+", title: "лет опыта" },
+          { number: "90%", title: "уровень удовлетворённости пациентов" },
+          { number: "1000+", title: "уровень удовлетворённости пациентов" },
+          { number: "6+", title: "специалистов в команде" },
         ]}
       />
       <Section bottomMd={190} bottomLg={145} bottomXl={105}>
