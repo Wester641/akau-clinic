@@ -24,7 +24,7 @@ app.post("/send", async (req, res) => {
   const { name, date_time, phone, message, date_day } = req.body;
 
   try {
-    const text = `Имя пациента: ${name}\nВремя: ${date_time}\nНомер телефона: ${phone}\nСообщение: ${message}\nДень: ${date_day}`;
+    const text = `Имя пациента: ${name} \nНомер телефона: ${phone}\nСообщение: ${message}\nДень: ${date_day} \nВремя: ${date_time} `;
 
     for (const chatId of chatIds) {
       await axios.post(
