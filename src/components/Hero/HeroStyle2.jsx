@@ -61,7 +61,7 @@ export default function HeroStyle2({
                 </button>
               </div>
             </div>
-            <div className="cs_hero_bottom_right">
+            {/* <div className="cs_hero_bottom_right">
               {funfactList?.length > 0 && (
                 <div className="cs_hero_funfact text-center">
                   {funfactList?.map((item, index) => (
@@ -72,7 +72,7 @@ export default function HeroStyle2({
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

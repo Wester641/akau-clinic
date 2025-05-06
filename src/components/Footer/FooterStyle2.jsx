@@ -5,22 +5,21 @@ import TextWidget from '../Widget/TextWidget';
 import SocialWidget from '../Widget/SocialWidget';
 import NewsletterStyle2 from '../Widget/NewsletterStyle2';
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
+  { title: 'О нас', href: '/about' },
+  { title: 'Отделения', href: '/departments' },
+  { title: 'Врачи', href: '/doctors' },
+  { title: 'Расписание', href: '/timetable' },
+  { title: 'Запись на прием', href: '/appointments' },
 ];
 
 const menuDataTwo = [
-  { title: 'Testimonials', href: '/' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/' },
+  { title: 'Новости', href: '/blog' },
+  { title: 'Контакты', href: '/contact' },
   { title: 'FAQs', href: '/' },
 ];
 const menuDataThree = [
-  { title: 'Privacy Policy', href: '/' },
-  { title: 'Terms and Conditions', href: '/blog' },
+  { title: 'Политика конфиденциальности', href: '/' },
+  { title: 'Пользовательское соглашение', href: '/blog' },
 ];
 
 export default function FooterStyle2() {

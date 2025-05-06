@@ -50,54 +50,54 @@ export default function Header({ logoSrc, variant }) {
                     }`}
                   >
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link to="/">Главная</Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about">О нас</Link>
                     </li>
                     <li>
-                      <Link to="/doctors">Find Doctor</Link>
+                      <Link to="/doctors">Врачи</Link>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
+                      <Link to="/blog">Новости</Link>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link to="/">Pages</Link>
+                      <Link to="/">Страницы</Link>
                       <DropDown>
                         <ul>
                           <li>
-                            <Link to="/appointments">Appointments</Link>
+                            <Link to="/appointments">Запись на прием</Link>
                           </li>
                           <li>
-                            <Link to="/departments">Departments</Link>
+                            <Link to="/departments">Отделения</Link>
                           </li>
                           <li>
                             <Link to="/departments/department-details">
-                              Department Details
+                              Отделение детально
                             </Link>
                           </li>
                           <li>
-                            <Link to="/doctors">Doctors</Link>
+                            <Link to="/doctors">Врачи</Link>
                           </li>
                           <li>
                             <Link to="doctors/doctor-details">
-                              Doctor Details
+                              Врач детально
                             </Link>
                           </li>
                           <li>
-                            <Link to="/pricing-plan">Pricing Plan</Link>
+                            <Link to="/pricing-plan">Прайс Лист</Link>
                           </li>
                           <li>
-                            <Link to="/gallery">Gallery</Link>
+                            <Link to="/gallery">Галерея</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Timetable</Link>
+                            <Link to="/timetable">График работы</Link>
                           </li>
                         </ul>
                       </DropDown>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact">Контакты</Link>
                     </li>
                   </ul>
                   <span
