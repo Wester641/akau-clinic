@@ -16,7 +16,7 @@ const corsOptions = {
     "https://akau-clinic.vercel.app",
     "https://akau-clinic-1.onrender.com",
   ],
-  methods: ["GET", "POST"],
+  methods: ["OPTIONS", "GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
 
