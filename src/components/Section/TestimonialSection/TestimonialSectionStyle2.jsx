@@ -1,7 +1,7 @@
-import React from 'react';
-import Spacing from '../../Spacing';
-import SectionHeading from '../../SectionHeading';
-import TestimonialCarousel from '../../Slider/TestimonialCarousel';
+import React from "react";
+import Spacing from "../../Spacing";
+import SectionHeading from "../../SectionHeading";
+import TestimonialCarousel from "../../Slider/TestimonialCarousel";
 
 export default function TestimonialSectionStyle2({
   sectionTitle,
@@ -9,7 +9,7 @@ export default function TestimonialSectionStyle2({
   data,
 }) {
   return (
-    <div className="container">
+    <div className="container maxWidth">
       <div className="position-relative">
         <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
         <Spacing md="72" lg="50" />

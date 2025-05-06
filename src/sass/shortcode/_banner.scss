@@ -312,7 +312,7 @@
 .cs_banner_8_wrap {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -417,4 +417,9 @@
       max-width: 48%;
     }
   }
+}
+
+.maxWidth {
+  max-width: 1140px !important;
+  margin: 0 auto;
 }

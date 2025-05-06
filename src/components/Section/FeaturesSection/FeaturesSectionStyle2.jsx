@@ -1,13 +1,13 @@
-import React from 'react';
-import SectionHeading from '../../SectionHeading';
-import Spacing from '../../Spacing';
-import IconBoxStyle6 from '../../IconBox/IconBoxStyle6';
+import React from "react";
+import SectionHeading from "../../SectionHeading";
+import Spacing from "../../Spacing";
+import IconBoxStyle6 from "../../IconBox/IconBoxStyle6";
 
 export default function FeaturesSectionStyle2({ sectionTitle, imgUrl, data }) {
   return (
     <div className="cs_shape_wrap">
       <div className="cs_shape_1 cs_position_1" />
-      <div className="container">
+      <div className="container maxWidth">
         <div className="row flex-xl-row flex-column-reverse">
           <div className="col-xl-5">
             <div className="cs_pr_95 text-center cs_img_filed">

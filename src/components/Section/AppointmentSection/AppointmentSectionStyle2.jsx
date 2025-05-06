@@ -1,7 +1,7 @@
-import React from 'react';
-import AppointmentForm from '../../AppointmentForm';
-import SectionHeading from '../../SectionHeading';
-import Spacing from '../../Spacing';
+import React from "react";
+import AppointmentForm from "../../AppointmentForm";
+import SectionHeading from "../../SectionHeading";
+import Spacing from "../../Spacing";
 
 export default function AppointmentSectionStyle2({
   bgUrl,
@@ -16,7 +16,7 @@ export default function AppointmentSectionStyle2({
         backgroundImage: `url(${bgUrl})`,
       }}
     >
-      <div className="container">
+      <div className="container maxWidth">
         <div className="cs_height_132" />
         <div className="cs_appointment_img">
           <img src={imgUrl} alt="Appointment" />

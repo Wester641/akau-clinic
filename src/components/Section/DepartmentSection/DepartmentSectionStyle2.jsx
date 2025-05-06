@@ -1,7 +1,7 @@
-import React from 'react';
-import SectionHeading from '../../SectionHeading';
-import Spacing from '../../Spacing';
-import IconBoxStyle4 from '../../IconBox/IconBoxStyle4';
+import React from "react";
+import SectionHeading from "../../SectionHeading";
+import Spacing from "../../Spacing";
+import IconBoxStyle4 from "../../IconBox/IconBoxStyle4";
 
 export default function DepartmentSectionStyle1({
   sectionTitle,
@@ -9,7 +9,7 @@ export default function DepartmentSectionStyle1({
   data,
 }) {
   return (
-    <div className="container">
+    <div className="container maxWidth">
       <div className="row">
         <div className="col-md-6 col-xl-4">
           <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
