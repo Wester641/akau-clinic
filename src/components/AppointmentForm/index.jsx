@@ -1,15 +1,29 @@
-import { Icon } from "@iconify/react";
-import React, { useState } from "react";
+// import { Icon } from "@iconify/react";
+import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useForm, Controller } from "react-hook-form";
 
 export default function AppointmentForm() {
-  const [selectedDate, setSelectedDate] = useState(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    control,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    axios.post("http://localhost:5000/send", data);
+    reset();
+  };
   return (
-    <form action="#" className="row">
+    <form action="#" className="row" onSubmit={handleSubmit(onSubmit)}>
       <div className="col-lg-6">
         <label className="cs_input_label cs_heading_color">Имя</label>
         <input
+          {...register("name", {
+            required: "This field is required",
+          })}
           type="text"
           className="cs_form_field"
           placeholder="Надежда Петровна"
@@ -21,6 +35,9 @@ export default function AppointmentForm() {
           Номер телефона
         </label>
         <input
+          {...register("phone", {
+            required: "This field is required",
+          })}
           type="text"
           className="cs_form_field"
           placeholder="+7 (123) 456 - 789"
@@ -32,6 +49,9 @@ export default function AppointmentForm() {
           Что-то интересное
         </label>
         <input
+          {...register("message", {
+            required: "This field is required",
+          })}
           type="text"
           className="cs_form_field"
           placeholder="Пожелании к врачу"
@@ -40,8 +60,27 @@ export default function AppointmentForm() {
       </div>
       <div className="col-lg-6">
         <label className="cs_input_label cs_heading_color">Выберите дату</label>
-
-        <div className="cs_with_icon_input">
+        <Controller
+          control={control}
+          name="date_day"
+          rules={{ required: "Дата обязательна" }}
+          render={({ field }) => (
+            <div className="cs_with_icon_input">
+              <DatePicker
+                placeholderText="дд/мм/гггг"
+                dateFormat="dd/MM/yyyy"
+                minDate={new Date()}
+                isClearable
+                selected={field.value}
+                onChange={(date) => field.onChange(date)}
+              />
+              {/* <i>
+                <Icon icon="fa6-solid:calendar-days" />
+              </i> */}
+            </div>
+          )}
+        />
+        {/* <div className="cs_with_icon_input">
           <DatePicker
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
@@ -49,11 +88,11 @@ export default function AppointmentForm() {
             minDate={new Date()}
             isClearable
             placeholderText="dd/mm/yyyy"
-          />
-          <i>
+          /> */}
+        {/* <i>
             <Icon icon="fa6-solid:calendar-days" />
-          </i>
-        </div>
+          </i> */}
+        {/* </div> */}
         <div className="cs_height_42 cs_height_xl_25" />
       </div>
       <div className="col-lg-6">
@@ -62,13 +101,14 @@ export default function AppointmentForm() {
         </label>
         <div className="cs_with_icon_input">
           <input
+            {...register("date_time")}
             type="time"
             className="cs_form_field cs_timepicker"
             placeholder="10:00AM"
           />
-          <i>
+          {/* <i>
             <Icon icon="fa6-regular:clock" />
-          </i>
+          </i> */}
         </div>
         <div className="cs_height_42 cs_height_xl_25" />
       </div>
@@ -173,7 +213,7 @@ export default function AppointmentForm() {
         <div className="cs_height_42 cs_height_xl_25" />
       </div> */}
       <div className="col-lg-12">
-        <button className="cs_btn cs_style_1">
+        <button type="submit" className="cs_btn cs_style_1">
           <span>Отправить</span>
           <i>
             <img src="/images/icons/arrow_white.svg" alt="Icon" />
