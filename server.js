@@ -11,7 +11,11 @@ const telegramToken = "7968841993:AAElhy0Ta6r8TX2iE6NvghmGNnocOek2K8Q";
 const chatIds = ["1873800563", "7361353167"];
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://akau-clinic.vercel.app"],
+  origin: [
+    "http://localhost:3000",
+    "https://akau-clinic.vercel.app",
+    "https://akau-clinic-1.onrender.com",
+  ],
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
