@@ -190,37 +190,36 @@ export default function HomeStyle2() {
     <>
       <HeroStyle2
         title="Многопрофильный медицинский центр в Москве"
-        subTitle="Our team of experienced doctors and healthcare professionals are
-        committed to providing quality care and personalized attention to
-        our patients."
+        subTitle="Широкий спектр медицинских услуг"
         bgUrl="/images/home_2/hero_bg.jpeg"
         imgUrl="/images/home_2/patents.png"
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
-        btnText="Pro Health"
+        btnText="Ak Аю - Клиник"
         btnUrl="/"
         funfactList={[
           { number: "7+", title: "лет опыта" },
           { number: "90%", title: "уровень удовлетворённости пациентов" },
-          { number: "1000+", title: "уровень удовлетворённости пациентов" },
+          { number: "1000+", title: "пациентов в год" },
           { number: "6+", title: "специалистов в команде" },
         ]}
       />
-      <Section bottomMd={190} bottomLg={145} bottomXl={105}>
+      <Section topMd={185} topLg={140} topXl={100}>
+        <DepartmentSectionStyle4
+          sectionTitle="Для Вашей Здоровья"
+          sectionTitleUp="НАШИ ДЕПАРТМЕНТЫ"
+          data={departmentData}
+        />
+      </Section>
+      <Section bottomMd={125} bottomLg={125} bottomXl={85}>
         <AboutSectionStyle3
-          titleUp="ABOUT US"
+          titleUp="О НАС"
           title="ProHealth is a team of experienced medical professional"
           subTitle="Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms."
           imgUrl="/images//home_2/about.jpeg"
         />
       </Section>
-      <Section bottomMd={125} bottomLg={125} bottomXl={85}>
-        <DepartmentSectionStyle4
-          sectionTitle="For Your Health"
-          sectionTitleUp="OUR DEPARTMENTS"
-          data={departmentData}
-        />
-      </Section>
+
       <Section
         className="cs_bg_filed"
         style={{ backgroundImage: `url(/images/home_2/testimonial_bg.svg)` }}

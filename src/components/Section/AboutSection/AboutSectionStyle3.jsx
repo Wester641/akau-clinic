@@ -1,6 +1,6 @@
-import React from 'react';
-import SectionHeading from '../../SectionHeading';
-import Spacing from '../../Spacing';
+import React from "react";
+import SectionHeading from "../../SectionHeading";
+import Spacing from "../../Spacing";
 
 export default function AboutSectionStyle3({
   titleUp,

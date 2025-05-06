@@ -1,18 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import VideoModal from "../VideoModal";
 
 export default function HeroStyle2({
   title,
   subTitle,
   bgUrl,
   imgUrl,
-  videoBtnText,
-  videoUrl,
   funfactList,
   btnText,
   btnUrl,
 }) {
+  const handleScrollToBooking = () => {
+    const bookingSection = document.getElementsByClassName(
+      "cs_appointment_section_1 cs_bg_filed"
+    )[0];
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <section
@@ -28,7 +33,14 @@ export default function HeroStyle2({
                   {btnText}
                 </Link>
               </div>
-              <p className="cs_hero_subtitle cs_white_color">{subTitle}</p>
+              <p className="cs_hero_subtitle cs_white_color">
+                {subTitle}
+                <ul>
+                  <li>пластические операции</li>
+                  <li>хирургия </li>
+                  <li>гинекология и многое другое</li>
+                </ul>
+              </p>
             </div>
           </div>
           <img src={imgUrl} alt="Hero" className="cs_hero_patents" />
@@ -37,11 +49,16 @@ export default function HeroStyle2({
           <div className="cs_hero_bottom">
             <div className="cs_hero_bottom_left">
               <div className="cs_hero_btn_wrap">
-                <VideoModal
-                  videoUrl={videoUrl}
-                  videoBtnText={videoBtnText}
-                  variant="cs_white_color"
-                />
+                <button
+                  onClick={handleScrollToBooking}
+                  className="cs_btn cs_style_1"
+                >
+                  <span>Записаться на прием к врачу</span>
+                  <i>
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                  </i>
+                </button>
               </div>
             </div>
             <div className="cs_hero_bottom_right">
