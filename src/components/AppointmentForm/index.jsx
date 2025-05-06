@@ -49,9 +49,7 @@ export default function AppointmentForm() {
           Что-то интересное
         </label>
         <input
-          {...register("message", {
-            required: "This field is required",
-          })}
+          {...register("message")}
           type="text"
           className="cs_form_field"
           placeholder="Пожелании к врачу"
@@ -63,7 +61,7 @@ export default function AppointmentForm() {
         <Controller
           control={control}
           name="date_day"
-          rules={{ required: "Дата обязательна" }}
+          // rules={{ required: "Дата обязательна" }}
           render={({ field }) => (
             <div className="cs_with_icon_input">
               <DatePicker
