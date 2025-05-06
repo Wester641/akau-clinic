@@ -6,40 +6,41 @@ import AppointmentSectionStyle2 from "../Section/AppointmentSection/AppointmentS
 import BrandsSectionStyle2 from "../Section/BrandsSection/BrandsSectionStyle2";
 import { pageTitle } from "../../helpers/PageTitle";
 import DepartmentSectionStyle2 from "../Section/DepartmentSection/DepartmentSectionStyle2";
-import FeaturesSectionStyle2 from "../Section/FeaturesSection/FeaturesSectionStyle2";
+// import FeaturesSectionStyle2 from "../Section/FeaturesSection/FeaturesSectionStyle2";
 import FunFactSection from "../Section/FunFactSection";
-import TeamSection from "../Section/TeamSection";
+// import TeamSection from "../Section/TeamSection";
 import GallerySection from "../Section/GallerySection";
-import AwardSectionStyle2 from "../Section/AwardSection/AwardSectionStyle2";
+// import AwardSectionStyle2 from "../Section/AwardSection/AwardSectionStyle2";
+import ContactInfoSection from "../Section/ContactInfoSection";
 
 const testimonialData = [
   {
-    text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
+    text: "Обратились с ребёнком — быстро помогли, врач внимательный, всё прошло спокойно.",
     ratingNumber: "5",
     avatarImgUrl: "/images/home_2/avatar_2.png",
-    avatarName: "PAULO HUBERT",
-    avatarDesignation: "New York, USA",
+    avatarName: "Анна Кравцова",
+    avatarDesignation: "Москва",
   },
   {
-    text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
+    text: "Быстро помогли с зубной болью. Всё чётко, без лишнего — теперь лечимся только здесь.",
     ratingNumber: "4.5",
     avatarImgUrl: "/images/home_2/avatar_2.png",
-    avatarName: "PAULO HUBERT",
-    avatarDesignation: "New York, USA",
+    avatarName: "Дмитрий Сорокин",
+    avatarDesignation: "Балашиха, Москва",
   },
   {
-    text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
+    text: "Понравилась организация и чистота. Хирург — профессионал, операция прошла без проблем.",
     ratingNumber: "5",
     avatarImgUrl: "/images/home_2/avatar_2.png",
-    avatarName: "PAULO HUBERT",
-    avatarDesignation: "New York, USA",
+    avatarName: "Ирина Агапова",
+    avatarDesignation: "Люберцы, Москва",
   },
   {
-    text: "I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”",
+    text: "Кардиолог внимательно выслушал маму, назначил всё по делу. Остались довольны.",
     ratingNumber: "4.5",
     avatarImgUrl: "/images/home_2/avatar_2.png",
-    avatarName: "PAULO HUBERT",
-    avatarDesignation: "New York, USA",
+    avatarName: "Алексей Новиков",
+    avatarDesignation: "Москва",
   },
 ];
 
@@ -73,77 +74,13 @@ const brandData = [
     imgAlt: "Brand",
   },
 ];
-const featureListData = [
-  {
-    title: "Experienced Medical Professionals",
-    subTitle:
-      "Our team includes experienced doctors, nurses, <br />and other healthcare professionals who are <br />dedicated to providing the best possible care to <br />our patients.",
-    iconUrl: "images/icons/professional.svg",
-  },
-  {
-    title: "Comprehensive <br />Services",
-    subTitle:
-      "We offer a wide range of healthcare services, <br />from preventive care to specialized treatment <br />for complex conditions.",
-    iconUrl: "images/icons/comprehensive.svg",
-  },
-  {
-    title: "Patient-centered <br />Approach",
-    subTitle:
-      "We believe in treating each patient as an <br />individual, and we take the time to understand <br />your unique health needs and concerns.",
-    iconUrl: "images/icons/patient.svg",
-  },
-  {
-    title: "State-of-the-art <br />Facilities",
-    subTitle:
-      "Our healthcare center is equipped with the <br />latest technology and equipment to provide our <br />patients with the most advanced care possible.",
-    iconUrl: "images/icons/facilities.svg",
-  },
-];
+
 const funFactData = [
-  { number: "7+", title: "лет опыта" },
-  { number: "90%", title: "довольных пациентов" },
+  { number: "7+", title: "лет опыта " },
+  { number: "90%", title: " довольных пациентов" },
   { number: "1000+", title: "пациентов в год" },
   { number: "6+", title: "специалистов в команде" },
   { number: "100%", title: "современное оборудование" },
-];
-
-const teamData = [
-  {
-    imgUrl: "images/about/doctor_1.png",
-    name: "Dr. James Lee, MD",
-    designation: "Head of Cardiologist",
-    description:
-      "With expertise in managing complex heart conditions and performing advanced cardiac procedures",
-    social: [
-      { icon: "fa6-brands:facebook-f", href: "/about" },
-      { icon: "fa6-brands:linkedin-in", href: "/about" },
-      { icon: "fa6-brands:twitter", href: "/about" },
-    ],
-  },
-  {
-    imgUrl: "images/about/doctor_2.png",
-    name: "Dr. John Smith, MD",
-    designation: "Emergency Medicine Physician",
-    description:
-      "With expertise in treating acute illnesses and injuries in medicine physician",
-    social: [
-      { icon: "fa6-brands:facebook-f", href: "/about" },
-      { icon: "fa6-brands:linkedin-in", href: "/about" },
-      { icon: "fa6-brands:twitter", href: "/about" },
-    ],
-  },
-  {
-    imgUrl: "images/about/doctor_3.png",
-    name: "Dr. Susan Bones, MD",
-    designation: "Board-certified Pediatrician",
-    description:
-      "With experience in managing complex medical conditions in children",
-    social: [
-      { icon: "fa6-brands:facebook-f", href: "/about" },
-      { icon: "fa6-brands:linkedin-in", href: "/about" },
-      { icon: "fa6-brands:twitter", href: "/about" },
-    ],
-  },
 ];
 
 const galleryData = [
@@ -156,39 +93,40 @@ const galleryData = [
 
 const departmentData2 = [
   {
-    title: "Diagnostic testing",
+    title: "🩺 Диагностические исследования",
     subTitle:
-      "Blood tests, imaging studies, and other tests to diagnose health conditions",
+      "Анализы крови, инструментальная диагностика и другие обследования для выявления заболеваний.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/department-details",
+    // href: "/departments/department-details",
+    href: "/",
   },
   {
-    title: "Rehabilitation services",
+    title: "♿ Реабилитационные услуги",
     subTitle:
-      "Physical therapy, occupational therapy, and other services to help patients recover from injuries",
+      "Физиотерапия, трудотерапия и другие методы восстановления после травм и операций.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/department-details",
+    href: "/",
   },
   {
-    title: "Preventive care",
+    title: "🛡️ Профилактическая помощь",
     subTitle:
-      "Annual checkups, immunizations, and health screenings care preventive",
+      "Ежегодные осмотры, вакцинация и профилактические скрининги для поддержания здоровья.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/department-details",
+    href: "/",
   },
   {
-    title: "Treatment for acute and chronic conditions",
+    title: "💊 Лечение острых и хронических заболеваний",
     subTitle:
-      "Medication management, disease management, and other treatments to improve health outcomes",
+      "Медикаментозное лечение, контроль заболеваний и другие меры для улучшения здоровья.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/department-details",
+    href: "/",
   },
   {
-    title: "Mental health services",
+    title: "🧠 Психологическая помощь",
     subTitle:
-      "Counseling, therapy, and other services to help patients manage mental health conditions",
+      "Консультации, терапия и поддержка для улучшения психоэмоционального состояния.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/department-details",
+    href: "/",
   },
 ];
 export default function HomeStyle2() {
@@ -205,27 +143,33 @@ export default function HomeStyle2() {
         btnText="Ak Аю - Клиник"
         btnUrl="/"
       />
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Section
+        topMd={200}
+        topLg={150}
+        topXl={110}
+        bottomMd={100}
+        bottomLg={110}
+      >
         <DepartmentSectionStyle2
-          sectionTitle="Provides Our Best Services"
-          sectionTitleUp="SERVICES"
+          sectionTitle="Мы предоставляем лучшие медицинские услуги"
+          sectionTitleUp="УСЛУГИ"
           data={departmentData2}
         />
       </Section>
-      <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
+      {/* <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="Why Choose Us"
           imgUrl="images/about/why_choose_us.jpeg"
           data={featureListData}
         />
-      </Section>
-      <Section>
+      </Section> */}
+      <Section bottomMd={200} bottomLg={150} bottomXl={110}>
         <FunFactSection
           bgUrl="images/about/fun_fact_bg.jpeg"
           data={funFactData}
         />
       </Section>
-      <Section
+      {/* <Section
         topMd={190}
         topLg={145}
         topXl={105}
@@ -234,11 +178,11 @@ export default function HomeStyle2() {
         bottomXl={110}
       >
         <TeamSection
-          sectionTitle="Experts Doctor"
-          sectionTitleUp="MEET OUR"
+          sectionTitle="специалисты"
+          sectionTitleUp="Наши"
           data={teamData}
         />
-      </Section>
+      </Section> */}
 
       <Section
         className="cs_bg_filed"
@@ -251,8 +195,8 @@ export default function HomeStyle2() {
         bottomXl={110}
       >
         <TestimonialSectionStyle2
-          sectionTitle="What Our Patients Say <br /> About Us"
-          sectionTitleUp="TESTIMONIALS"
+          sectionTitle="Мнение пациентов <br /> о нас"
+          sectionTitleUp="ОТЗЫВЫ"
           data={testimonialData}
         />
       </Section>
@@ -265,8 +209,8 @@ export default function HomeStyle2() {
         bottomXl={110}
       >
         <GallerySection
-          sectionTitle="Our Facilities and <br />Latest Activities"
-          sectionTitleUp="HAVE A LOOK AT"
+          sectionTitleUp="ОЗНАКОМЬТЕСЬ С"
+          sectionTitle="Нашей клиникой и последними событиями"
           data={galleryData}
         />
       </Section>
@@ -277,6 +221,16 @@ export default function HomeStyle2() {
           sectionTitleUp="ОНЛАЙН-ЗАПИСЬ"
           sectionTitle="К врачу"
         />
+      </Section>
+      <Section
+        topMd={200}
+        topLg={150}
+        topXl={100}
+        // bottomMd={200}
+        // bottomLg={150}
+        // bottomXl={110}
+      >
+        <ContactInfoSection sectionTitle="Наш адрес" />
       </Section>
       <Section
         topMd={200}

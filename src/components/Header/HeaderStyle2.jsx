@@ -46,7 +46,7 @@ export default function HeaderStyle2({ logoSrc, variant, btnText, btnUrl }) {
                     <li className="menu-item-has-children">
                       <Link to="/">Главная</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/about">О нас</Link>
                     </li>
                     <li>
@@ -92,7 +92,7 @@ export default function HeaderStyle2({ logoSrc, variant, btnText, btnUrl }) {
                     </li>
                     <li>
                       <Link to="/contact">Контакты</Link>
-                    </li>
+                    </li> */}
                   </ul>
                   <span
                     className={

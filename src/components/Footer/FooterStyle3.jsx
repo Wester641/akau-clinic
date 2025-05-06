@@ -1,26 +1,26 @@
-import React from 'react';
-import SocialWidget from '../Widget/SocialWidget';
-import TextWidget from '../Widget/TextWidget';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
-import NewsletterStyle3 from '../Widget/NewsletterStyle3';
-import MenuWidget from '../Widget/MenuWidget';
+import React from "react";
+import SocialWidget from "../Widget/SocialWidget";
+import TextWidget from "../Widget/TextWidget";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
+import NewsletterStyle3 from "../Widget/NewsletterStyle3";
+import MenuWidget from "../Widget/MenuWidget";
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
+  { title: "About Us", href: "/about" },
+  { title: "Departments", href: "/departments" },
+  { title: "Doctors", href: "/doctors" },
+  { title: "Timetable", href: "/timetable" },
+  { title: "Appointment", href: "/appointments" },
 ];
 
 const menuDataTwo = [
-  { title: 'Testimonials', href: '/' },
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/' },
-  { title: 'FAQs', href: '/' },
+  { title: "Testimonials", href: "/" },
+  { title: "Blog", href: "/blog" },
+  { title: "Contact Us", href: "/" },
+  { title: "FAQs", href: "/" },
 ];
 const menuDataThree = [
-  { title: 'Privacy Policy', href: '/' },
-  { title: 'Terms and Conditions', href: '/blog' },
+  { title: "Privacy Policy", href: "/" },
+  { title: "Terms and Conditions", href: "/blog" },
 ];
 
 export default function FooterStyle3() {

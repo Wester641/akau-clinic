@@ -79,19 +79,19 @@
   }
 }
 .cs_fs_72 {
-  font-size: 72px;
+  font-size: 42px;
   line-height: 1.14em;
   @media (max-width: 1700px) {
-    font-size: 56px;
+    font-size: 36px;
   }
   @media (max-width: 991px) {
-    font-size: 50px;
+    font-size: 30px;
   }
   @media (max-width: 575px) {
-    font-size: 48px;
+    font-size: 28px;
   }
   @media (max-width: 350px) {
-    font-size: 42px;
+    font-size: 22px;
   }
 }
 .cs_fs_48 {
@@ -115,10 +115,10 @@
   }
 }
 .cs_fs_32 {
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1.31em;
   @media (max-width: 1700px) {
-    font-size: 26px;
+    font-size: 22px;
   }
   @media (max-width: 991px) {
     font-size: 24px;
@@ -906,13 +906,10 @@ input::-ms-input-placeholder,
     bottom: 0;
     left: -9.5%;
     width: 55%;
-    @media (max-width: 1400px) {
-      left: -16%;
-      width: 63%;
-    }
+
     @media (max-width: 1199px) {
-      left: -24%;
-      width: 72%;
+      left: -9.5%;
+      width: 55%;
     }
     @media (max-width: 991px) {
       display: none;
@@ -1735,7 +1732,7 @@ input::-ms-input-placeholder,
     height: 100%;
     width: 100%;
     border: none;
-    filter: grayscale(100%);
+    // filter: grayscale(100%);
     border-radius: 30px;
   }
 }

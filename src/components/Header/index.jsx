@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import DropDown from "./DropDown";
+// import DropDown from "./DropDown";
 import SocialWidget from "../Widget/SocialWidget";
-import Newsletter from "../Widget/Newsletter";
+// import Newsletter from "../Widget/Newsletter";
 import IconBoxStyle11 from "../IconBox/IconBoxStyle11";
 import Spacing from "../Spacing";
-import WorkTime from "../WorkTime/worktime";
+// import WorkTime from "../WorkTime/worktime";
 
 export default function Header({ logoSrc, variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -52,7 +52,7 @@ export default function Header({ logoSrc, variant }) {
                     <li>
                       <Link to="/">Главная</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/about">О нас</Link>
                     </li>
                     <li>
@@ -95,10 +95,10 @@ export default function Header({ logoSrc, variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <Link to="/contact">Контакты</Link>
-                    </li>
+                    </li> */}
                   </ul>
                   <span
                     className={
@@ -181,31 +181,31 @@ export default function Header({ logoSrc, variant }) {
             <img src="/images/logo.svg" alt="Logo" />
             <div className="cs_height_15" />
             <h3 className="cs_fs_24 cs_semibold mb-0">
-              Your Partner in Health and Wellness
+              Ваше здоровье — наша забота
             </h3>
           </div>
           <Spacing md="35" lg="35" xl="35" />
           <hr />
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
-            title="Phone"
-            subTitle="123-456-7890"
+            title="Телефон"
+            subTitle="+7 999 123 45 67"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
-            title="Email"
-            subTitle="hellocallcenter@gmail.com"
+            title="Почта"
+            subTitle="zafarzhon10@gmail.com"
             iconSrc="/images/contact/icon_2.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
-            title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
+            title="Местоположение"
+            subTitle="Москва, ул. Мира 1"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />
-          <Newsletter />
+          {/* <Newsletter /> */}
           <Spacing md="70" lg="50" xl="50" />
           <hr />
           <Spacing md="70" lg="50" xl="50" />
@@ -217,7 +217,7 @@ export default function Header({ logoSrc, variant }) {
           <div className="container">
             <div className="cs_header_search_box">
               <form className="cs_search_form">
-                <input type="text" placeholder="Search Doctors" />
+                <input type="text" placeholder="Поиск" />
                 <button className="cs_search_btn">
                   <svg
                     width={18}

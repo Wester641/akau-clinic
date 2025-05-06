@@ -5,7 +5,7 @@ import Team from "../../Team";
 
 export default function TeamSection({ sectionTitle, sectionTitleUp, data }) {
   return (
-    <div className="container maxWidth">
+    <div className="container">
       <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} center />
       <Spacing md="72" lg="50" />
       <div className="row gy-3">
