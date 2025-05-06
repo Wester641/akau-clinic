@@ -21,8 +21,8 @@
     }
   }
   .cs_iconbox_icon {
-    height: 120px;
-    width: 120px;
+    height: 60px;
+    width: 60px;
     flex: none;
     padding: 25px;
     position: relative;
@@ -103,7 +103,7 @@
   transition: all 0.4s ease;
   @media (max-width: 1700px) {
     min-height: 220px;
-    gap: 30px;
+    gap: 20px;
     padding: 40px;
     margin-bottom: 50px;
   }
@@ -210,8 +210,8 @@
     }
   }
   .cs_iconbox_icon {
-    height: 136px;
-    width: 136px;
+    height: 60px;
+    width: 60px;
     background: rgba($accent, 0.17);
     margin-left: auto;
     transition: all 0.4s ease;
@@ -757,4 +757,9 @@
     border-radius: inherit;
     padding: 20px;
   }
+}
+
+.cs_iconbox_icon{
+  width: 60px;
+  height: 60px;
 }
