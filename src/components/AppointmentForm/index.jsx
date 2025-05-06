@@ -13,7 +13,7 @@ export default function AppointmentForm() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/send", data);
+    axios.post("https://akau-clinic-1.onrender.com/send", data);
     reset();
   };
   return (
