@@ -3,6 +3,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useForm, Controller } from "react-hook-form";
+import styles from "./blur_component.module.scss";
 
 export default function AppointmentForm() {
   const {
@@ -17,10 +18,11 @@ export default function AppointmentForm() {
     reset();
   };
   return (
-    <form action="#" className="row" onSubmit={handleSubmit(onSubmit)}>
-      <div className="col-lg-6">
-        <label className="cs_input_label cs_heading_color">Имя</label>
-        <input
+      <div className={styles.blur}>
+        <form action="#" className="row" onSubmit={handleSubmit(onSubmit)}>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Имя</label>
+            <input
           {...register("name", {
             required: "This field is required",
           })}
@@ -220,5 +222,5 @@ export default function AppointmentForm() {
         </button>
       </div>
     </form>
-  );
+</div>  )
 }
