@@ -4,6 +4,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useForm, Controller } from "react-hook-form";
 import styles from "./blur_component.module.scss";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
+
 
 export default function AppointmentForm() {
   const {
@@ -222,5 +227,37 @@ export default function AppointmentForm() {
         </button>
       </div>
     </form>
-</div>  )
+    <div className={styles.contactsButton}>
+      <div>
+        <span>Форма онлайн-записи находится в разработке и скоро будет доступна. А пока вы можете быстро связаться с нами через:</span>
+      </div>
+      <a target="_blank" rel="noreferrer" href="https://wa.me/79969717187">
+        <span>WhatsApp</span>
+        <i>
+      <FaWhatsapp />
+        </i>
+      </a>
+      <a target="_blank" rel="noreferrer" href="https://t.me/zakharhhh2">
+        <span>Telegram</span>
+        <i>
+            <FaTelegram />
+        </i>
+      </a>
+      <a target="_blank" rel="noreferrer" href="https://t.me/zakharhhh2">
+        <span>Instagram</span>
+        <i>
+          <FaInstagram />
+        </i>
+      </a>
+      <a href="tel:+79969717187">
+        <span>По номеру</span>
+        <i>
+          <FaPhone />
+        </i>
+      </a>
+
+    </div>
+  </div>
+
+  )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import AppointmentForm from "../../AppointmentForm";
 import SectionHeading from "../../SectionHeading";
 import Spacing from "../../Spacing";
+// import BlurComponent from "../../BlurComponent";
 
 export default function AppointmentSectionStyle2({
   bgUrl,
@@ -16,7 +17,7 @@ export default function AppointmentSectionStyle2({
         backgroundImage: `url(${bgUrl})`,
       }}
     >
-      <div className="container maxWidth">
+      <div className="container maxWidth cs_blur">
         <div className="cs_height_132" />
         <div className="cs_appointment_img">
           <img src={imgUrl} alt="Appointment" />
@@ -26,6 +27,7 @@ export default function AppointmentSectionStyle2({
             <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
             <Spacing md="57" />
             <AppointmentForm />
+            {/* <BlurComponent/> */}
           </div>
         </div>
         <div className="cs_height_120" />

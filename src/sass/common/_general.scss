@@ -453,6 +453,10 @@ hr {
     margin-bottom: 10px;
   }
 }
+.cs_blur {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
 .cs_form_field,
 .react-datepicker-wrapper input {
   display: block;

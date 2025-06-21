@@ -1,9 +1,75 @@
+// .blur {
+//   backdrop-filter: blur(10px);
+//   -webkit-backdrop-filter: blur(10px);
+//   background-color: rgba(255, 255, 255, 0.2);
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 16px;
+//   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+//   padding: 2rem;
+// }
+
 .blur {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  // background-color: rgba(255, 255, 255, 0.2);
+  // border: 1px solid rgba(255, 255, 255, 0.3);
+  // border-radius: 16px;
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  position: relative;
+
+  form {
+    filter: blur(3px) !important;
+    -webkit-filter: blur(3px) !important;
+    pointer-events: none;
+  }
+
+  .contactsButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 16px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #307bc4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  a {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  i {
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #000;
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }
