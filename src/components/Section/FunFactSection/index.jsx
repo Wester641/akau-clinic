@@ -1,5 +1,5 @@
-import React from 'react';
-import FunFact from '../../FunFact';
+import React from "react";
+import FunFact from "../../FunFact";
 
 export default function FunFactSection({ bgUrl, data }) {
   return (

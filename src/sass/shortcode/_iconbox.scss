@@ -360,7 +360,7 @@
   }
   .cs_iconbox_title {
     margin-bottom: 12px;
-    min-height: 83px;
+    min-height: 53px;
     @media (max-width: 1700px) {
       min-height: initial;
     }
@@ -593,6 +593,7 @@
     padding: 40px 20px;
   }
 }
+
 .cs_iconbox.cs_style_11 {
   min-width: 360px;
   display: flex;
@@ -601,6 +602,10 @@
   padding: 38px 54px;
   gap: 20px;
   @media (max-width: 1700px) {
+    padding: 30px;
+    gap: 20px;
+  }
+  @media (min-width: 1700px) {
     padding: 30px;
     gap: 20px;
   }

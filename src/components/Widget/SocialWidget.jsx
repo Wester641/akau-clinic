@@ -19,7 +19,7 @@ export default function SocialWidget() {
         {/* <Link to="/">
           <Icon icon="fa-brands:twitter" />
         </Link> */}
-        <Link to="/">
+        <Link to="https://www.instagram.com/dr.muhamadaliev_01/">
           <Icon icon="fa-brands:instagram" />
         </Link>
       </div>

@@ -74,13 +74,13 @@ export default function Footer() {
           <div className="cs_footer_bottom_in">
             <SocialWidget />
             <div className="cs_copyright">
-              © 2024 Pro Health. Все права защищены.{" "}
+              © 2025 АкАю Клиника. Все права защищены.{" "}
               <a
                 href="https://t.me/zakharhhh"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Связаться с нами
+                IncTech Solutions Ltd. Связаться с нами
               </a>
             </div>
           </div>

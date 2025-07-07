@@ -193,12 +193,12 @@ export default function Header({ logoSrc, variant }) {
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
-          <IconBoxStyle11
+          {/* <IconBoxStyle11
             title="Почта"
             subTitle="zafarzhon10@gmail.com"
             iconSrc="/images/contact/icon_2.svg"
-          />
-          <Spacing md="30" lg="30" xl="30" />
+          /> */}
+          {/* <Spacing md="30" lg="30" xl="30" /> */}
           <IconBoxStyle11
             title="Местоположение"
             subTitle="г. Балашиха, мкр. Железнодорожный, ул. Лесопарковая, д. 7, пом. 1"

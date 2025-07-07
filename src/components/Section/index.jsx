@@ -1,13 +1,13 @@
-import React from 'react';
-import Spacing from '../Spacing';
+import React from "react";
+import Spacing from "../Spacing";
 
 export default function Section({
-  topMd = '_',
-  topLg = '_',
-  topXl = '_',
-  bottomMd = '_',
-  bottomLg = '_',
-  bottomXl = '_',
+  topMd = "_",
+  topLg = "_",
+  topXl = "_",
+  bottomMd = "_",
+  bottomLg = "_",
+  bottomXl = "_",
   children,
   ...props
 }) {

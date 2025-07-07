@@ -1,5 +1,5 @@
-import React from 'react';
-import Rating from '../Rating';
+import React from "react";
+import Rating from "../Rating";
 
 export default function TestimonialStyle2({
   text,
@@ -29,7 +29,7 @@ export default function TestimonialStyle2({
             />
           </svg>
         </div>
-        <p>{text}</p>
+        <p style={{ fontSize: "20px" }}>{text}</p>
         <Rating ratingNumber={ratingNumber} />
       </div>
       <div className="cs_testimonial_meta">
