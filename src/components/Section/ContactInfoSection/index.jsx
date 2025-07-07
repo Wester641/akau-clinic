@@ -11,7 +11,7 @@ export default function ContactInfoSection({ sectionTitle }) {
         <div className="col-xl-4">
           <IconBoxStyle11
             title="Телефон"
-            subTitle="+7 999 123 45 67"
+            subTitle="+7 (958) 502-05-55"
             iconSrc="/images/contact/icon_1.svg"
           />
         </div>
@@ -25,7 +25,7 @@ export default function ContactInfoSection({ sectionTitle }) {
         <div className="col-xl-4">
           <IconBoxStyle11
             title="Местоположение"
-            subTitle="Москва, ул. Мира 1"
+            subTitle="г. Балашиха, мкр. Железнодорожный, ул. Лесопарковая, д. 7, пом. 1"
             iconSrc="/images/contact/icon_3.svg"
           />
         </div>
@@ -36,37 +36,12 @@ export default function ContactInfoSection({ sectionTitle }) {
         <div
           style={{ position: "relative", overflow: "hidden", height: "500px" }}
         >
-          <a
-            href="https://yandex.com/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-            style={{
-              color: "#eee",
-              fontSize: "12px",
-              position: "absolute",
-              top: "0px",
-            }}
-          >
-            Москва
-          </a>
-          <a
-            href="https://yandex.com/maps/21621/reutov/house/yuzhnaya_ulitsa_15/Z04YfgFjSk0AQFtvfXt1d3VkZw==/?indoorLevel=1&ll=37.863512%2C55.746675&utm_medium=mapframe&utm_source=maps&z=18.45"
-            style={{
-              color: "#eee",
-              fontSize: "12px",
-              position: "absolute",
-              top: "14px",
-            }}
-          >
-            Южная улица, 15 — Яндекс Карты
-          </a>
           <iframe
-            id="map"
-            title="Yandex Map"
-            src="https://yandex.com/map-widget/v1/?indoorLevel=1&ll=37.863512%2C55.746675&mode=whatshere&whatshere%5Bpoint%5D=37.863409%2C55.747166&whatshere%5Bzoom%5D=17&z=18.45"
-            width="560"
-            height="600"
-            // frameborder="1"
-            allowFullScreen
-            style={{ position: "relative" }}
+            src="https://yandex.com/map-widget/v1/-/CHwIbR6X"
+            width="100%"
+            height="400"
+            frameborder="0"
+            allowfullscreen="true"
           />
         </div>
       </div>

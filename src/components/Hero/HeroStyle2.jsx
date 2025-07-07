@@ -36,7 +36,7 @@ export default function HeroStyle2({
               <p className="cs_hero_subtitle cs_white_color">
                 {subTitle}
                 <ul>
-                  <li>пластические операции</li>
+                  <li>стоматология</li>
                   <li>хирургия </li>
                   <li>гинекология и многое другое</li>
                 </ul>

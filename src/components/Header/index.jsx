@@ -189,7 +189,7 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
             title="Телефон"
-            subTitle="+7 999 123 45 67"
+            subTitle="+7 (958) 502-05-55"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
@@ -201,7 +201,7 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Местоположение"
-            subTitle="Москва, ул. Мира 1"
+            subTitle="г. Балашиха, мкр. Железнодорожный, ул. Лесопарковая, д. 7, пом. 1"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />

@@ -8,13 +8,13 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        Москва, ул. Мира 1
+        г. Балашиха, мкр. Железнодорожный, ул. Лесопарковая, д. 7, пом. 1
       </li>
       <li>
         <i className="cs_accent_bg">
           <Icon icon="fluent:call-24-regular" />
         </i>
-        +7 999 123 45 67
+        +7 (958) 502-05-55
       </li>
       <li>
         <i className="cs_accent_bg">
