@@ -12,6 +12,7 @@ import FunFactSection from "../Section/FunFactSection";
 import GallerySection from "../Section/GallerySection";
 // import AwardSectionStyle2 from "../Section/AwardSection/AwardSectionStyle2";
 import ContactInfoSection from "../Section/ContactInfoSection";
+import BannerSectionStyle4 from "../Section/BannerSection/BannerSectionStyle4";
 
 const testimonialData = [
   {
@@ -97,34 +98,34 @@ const departmentData2 = [
     subTitle:
       "Диагностика и лечение зубов, дёсен и полости рта. Эстетическая и терапевтическая стоматология.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/dentistry",
+    href: "/",
   },
   {
     title: "🩺 Терапевт",
     subTitle:
       "Общая диагностика и лечение широкого спектра заболеваний. Первичная медицинская помощь.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/therapist",
+    href: "/",
   },
   {
     title: "❤️ Кардиолог",
     subTitle:
       "Профилактика, диагностика и лечение заболеваний сердца и сосудов.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/cardiology",
+    href: "/",
   },
   {
     title: "🧔 Урология",
     subTitle: "Диагностика и лечение мочеполовой системы у мужчин и женщин.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/urology",
+    href: "/",
   },
   {
     title: "👩‍⚕️ Гинекология",
     subTitle:
       "Женское здоровье, включая диагностику, лечение гинекологических заболеваний.",
     iconUrl: "/images/icons/calendar_white.svg",
-    href: "/departments/gynecology",
+    href: "/",
   },
 ];
 
@@ -241,7 +242,13 @@ export default function HomeStyle2() {
       >
         <BrandsSectionStyle2 data={brandData} />
       </Section>
-      {/* </div> */}
+      <Section className="cs_footer_margin_0">
+        <BannerSectionStyle4
+          bgUrl="images/home_2/hero_bg2.jpeg"
+          title="Не позволяйте своему здоровью<br />оставаться на втором плане!"
+          subTitle="Запишитесь на прием к одному из наших опытных<br />медиков уже сегодня!"
+        />
+      </Section>
     </>
   );
 }

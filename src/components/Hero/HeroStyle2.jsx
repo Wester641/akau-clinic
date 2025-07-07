@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import WaterWave from "react-water-wave";
 
 export default function HeroStyle2({
   title,
@@ -19,49 +20,57 @@ export default function HeroStyle2({
     }
   };
   return (
-    <>
-      <section
-        className="cs_hero cs_style_2 cs_bg_filed"
-        style={{ backgroundImage: `url(${bgUrl})` }}
-      >
-        <div className="container">
-          <div className="cs_hero_text">
-            <h1 className="cs_hero_title cs_white_color cs_fs_84">{title}</h1>
-            <div className="cs_hero_text_in">
-              <div className="cs_hero_btn cs_white_color">
-                <Link to={btnUrl} className="cs_text_btn">
-                  {btnText}
-                </Link>
+    <WaterWave className="cs_hero cs_style_2 " imageUrl={bgUrl}>
+      {() => (
+        // <section
+        //   className="cs_hero cs_style_2 cs_bg_filed"
+        //   style={{ backgroundImage: `url(${bgUrl})` }}
+        // >
+        <>
+          <div className="container">
+            <div className="cs_hero_text">
+              <h1 className="cs_hero_title cs_white_color cs_fs_84">{title}</h1>
+              <div className="cs_hero_text_in">
+                <div className="cs_hero_btn cs_white_color">
+                  <Link to={btnUrl} className="cs_text_btn">
+                    {btnText}
+                  </Link>
+                </div>
+                <p className="cs_hero_subtitle cs_white_color">
+                  {subTitle}
+                  <ul>
+                    <li>стоматология</li>
+                    <li>хирургия </li>
+                    <li>гинекология и многое другое</li>
+                  </ul>
+                </p>
               </div>
-              <p className="cs_hero_subtitle cs_white_color">
-                {subTitle}
-                <ul>
-                  <li>стоматология</li>
-                  <li>хирургия </li>
-                  <li>гинекология и многое другое</li>
-                </ul>
-              </p>
+            </div>
+
+            {/* <img src={imgUrl} alt="Hero" className="cs_hero_patents" /> */}
+
+            <div className="cs_hero_patents_custom">
+              <div>150+</div>
+              <div>пациентов вылечено</div>
             </div>
           </div>
-          <img src={imgUrl} alt="Hero" className="cs_hero_patents" />
-        </div>
-        <div className="container">
-          <div className="cs_hero_bottom">
-            <div className="cs_hero_bottom_left">
-              <div className="cs_hero_btn_wrap">
-                <button
-                  onClick={handleScrollToBooking}
-                  className="cs_btn cs_style_1"
-                >
-                  <span>Записаться на прием к врачу</span>
-                  <i>
-                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
-                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
-                  </i>
-                </button>
+          <div className="container">
+            <div className="cs_hero_bottom">
+              <div className="cs_hero_bottom_left">
+                <div className="cs_hero_btn_wrap">
+                  <button
+                    onClick={handleScrollToBooking}
+                    className="cs_btn cs_style_1"
+                  >
+                    <span>Записаться на прием к врачу</span>
+                    <i>
+                      <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                      <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                    </i>
+                  </button>
+                </div>
               </div>
-            </div>
-            {/* <div className="cs_hero_bottom_right">
+              {/* <div className="cs_hero_bottom_right">
               {funfactList?.length > 0 && (
                 <div className="cs_hero_funfact text-center">
                   {funfactList?.map((item, index) => (
@@ -73,9 +82,11 @@ export default function HeroStyle2({
                 </div>
               )}
             </div> */}
+            </div>
           </div>
-        </div>
-      </section>
-    </>
+        </>
+        // </section>
+      )}
+    </WaterWave>
   );
 }

@@ -245,7 +245,40 @@
   }
   .cs_hero_patents {
     position: absolute;
-    top: -75px;
+    top: 250px;
+    right: 0;
+    z-index: 1;
+    animation: anim-y 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    @media (max-width: 1380px) {
+      top: -40px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  // custom patents
+  .cs_hero_patents_custom {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(119deg, #e6eef0fb 17.16%, #b2d0ee 89.78%);
+    border: 1px solid #dbe6f1;
+
+    div:nth-child(1) {
+      font-size: 36px;
+      font-weight: 500;
+      color: #292929;
+    }
+
+    position: absolute;
+    min-width: 384px;
+    min-height: 105px;
+    background-color: #fff;
+    border-radius: 100px;
+    top: 250px;
     right: 0;
     z-index: 1;
     animation: anim-y 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;

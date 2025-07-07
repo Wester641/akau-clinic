@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import VideoModal from '../VideoModal';
-import WaterWave from 'react-water-wave';
+import React from "react";
+import { Link } from "react-router-dom";
+import VideoModal from "../VideoModal";
+import WaterWave from "react-water-wave";
 
 export default function HeroStyle6({
   title,
