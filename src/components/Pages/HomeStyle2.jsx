@@ -13,6 +13,7 @@ import GallerySection from "../Section/GallerySection";
 // import AwardSectionStyle2 from "../Section/AwardSection/AwardSectionStyle2";
 import ContactInfoSection from "../Section/ContactInfoSection";
 import BannerSectionStyle4 from "../Section/BannerSection/BannerSectionStyle4";
+import CallToActionSection from "../CallToActionSection/CallToActionSection";
 
 const testimonialData = [
   {
@@ -96,7 +97,7 @@ const departmentData2 = [
   {
     title: "🦷 Стоматология",
     subTitle:
-      "Диагностика и лечение зубов, дёсен и полости рта. Эстетическая и терапевтическая стоматология.",
+      "Лечение и профилактика заболеваний зубов и дёсен. Эстетическая реставрация и забота о вашей улыбке.",
     iconUrl: "/images/icons/calendar_white.svg",
     href: "/",
   },
@@ -249,6 +250,8 @@ export default function HomeStyle2() {
           subTitle="Запишитесь на прием к одному из наших опытных<br />медиков уже сегодня!"
         />
       </Section>
+
+      <CallToActionSection />
     </>
   );
 }

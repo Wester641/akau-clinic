@@ -1,0 +1,60 @@
+.call_to_action_section {
+  position: fixed;
+  top: 80%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(154deg, #d2eaef 0%, #86bbf1 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border: 0;
+  overflow: visible;
+  cursor: pointer;
+  box-shadow: 0 0 12px #86bbf1;
+}
+
+/* Картинка */
+.call_to_action_section img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  z-index: 20;
+  position: relative;
+}
+
+/* Первая волна */
+.call_to_action_section::before,
+.call_to_action_section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(70, 150, 229, 0.3);
+  transform: translate(-50%, -50%) scale(1);
+  animation: wave 1.5s infinite ease-out;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Вторая волна с задержкой */
+.call_to_action_section::after {
+  animation-delay: 1.25s;
+}
+
+/* Анимация волны */
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
