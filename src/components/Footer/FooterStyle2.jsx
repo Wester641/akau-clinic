@@ -1,25 +1,25 @@
-import React from 'react';
-import MenuWidget from '../Widget/MenuWidget';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
-import TextWidget from '../Widget/TextWidget';
-import SocialWidget from '../Widget/SocialWidget';
-import NewsletterStyle2 from '../Widget/NewsletterStyle2';
+import React from "react";
+import MenuWidget from "../Widget/MenuWidget";
+import ContactInfoWidget from "../Widget/ContactInfoWidget";
+import TextWidget from "../Widget/TextWidget";
+import SocialWidget from "../Widget/SocialWidget";
+import NewsletterStyle2 from "../Widget/NewsletterStyle2";
 const menuDataOne = [
-  { title: 'О нас', href: '/about' },
-  { title: 'Отделения', href: '/departments' },
-  { title: 'Врачи', href: '/doctors' },
-  { title: 'Расписание', href: '/timetable' },
-  { title: 'Запись на прием', href: '/appointments' },
+  { title: "О нас", href: "/about" },
+  { title: "Отделения", href: "/departments" },
+  { title: "Врачи", href: "/doctors" },
+  { title: "Расписание", href: "/timetable" },
+  { title: "Запись на прием", href: "/appointments" },
 ];
 
 const menuDataTwo = [
-  { title: 'Новости', href: '/blog' },
-  { title: 'Контакты', href: '/contact' },
-  { title: 'FAQs', href: '/' },
+  { title: "Новости", href: "/blog" },
+  { title: "Контакты", href: "/contact" },
+  { title: "FAQs", href: "/" },
 ];
 const menuDataThree = [
-  { title: 'Политика конфиденциальности', href: '/' },
-  { title: 'Пользовательское соглашение', href: '/blog' },
+  { title: "Политика конфиденциальности", href: "/policy" },
+  { title: "Пользовательское соглашение", href: "/blog" },
 ];
 
 export default function FooterStyle2() {

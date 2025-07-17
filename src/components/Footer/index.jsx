@@ -16,8 +16,8 @@ const menuDataTwo = [
   { title: "Блог", href: "/" },
   { title: "Контакты", href: "/" },
   { title: "Часто задаваемые вопросы", href: "/" },
-  { title: "Политика конфиденциальности", href: "/" },
-  { title: "Условия использования", href: "/" },
+  { title: "Политика конфиденциальности", href: "/policy" },
+  // { title: "Условия использования", href: "/" },
 ];
 
 export default function Footer() {

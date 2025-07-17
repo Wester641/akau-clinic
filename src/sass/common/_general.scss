@@ -272,6 +272,25 @@ hr {
 .cs_gray_bg_1 {
   background-color: rgba(210, 234, 239, 0.2);
 }
+
+.cs_policy {
+  padding-top: 120px;
+  box-sizing: border-box;
+  @media (max-width: 991px) {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 1.25em;
+    @media (max-width: 1700px) {
+      font-size: 36px;
+    }
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
+  }
+}
 .cs_half_bg,
 .cs_half_bg_2 {
   position: relative;
